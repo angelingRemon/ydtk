@@ -14,7 +14,7 @@ module.exports = {
         plugins: [
           autoprefixer(),
           pxtorem({
-            rootValue:37.5,
+            rootValue:30,
             propList: ['*'],
             "selectorBlackList": [
               "van-"
@@ -27,7 +27,7 @@ module.exports = {
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
     // it can be accessed in index.html to inject the correct title.
-    name: '微信公众号',
+    name: '益点推客',
     resolve: {
       alias: {
         '@': resolve('src'),

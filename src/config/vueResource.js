@@ -114,7 +114,7 @@ export default async (type, apiName, url,data,options) => {
   var vm = this
   //url拼接
   let path = (apiName != '')? api[apiName] + url:url
-  await store.dispatch('updateLoading',{show:true}) //loading true
+  await store.dispatchdispatch('updateLoading',{show:true}) //loading true
   // console.log(path, 'path')
   // /-------------newadd
   if (options && options.form) {

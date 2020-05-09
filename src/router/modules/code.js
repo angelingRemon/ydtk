@@ -6,8 +6,8 @@
 export default [
   //恒盛招租
   {
-    path: 'hszz',
-    component: resolve => require(['@/views/code/index.vue'], resolve),
+    path: '/hszz/:sessionKey/:projectId',
+    component: resolve => require(['@/views/code/hszz.vue'], resolve),
     meta: {
       title: '恒盛招租'
     }

@@ -7,15 +7,15 @@ let env = process.env.NODE_ENV,
 
 if (env === 'development') { //开发环境
   api = {
-    wxHip: 'http://wx.gsy8.com/hip-api',
+    wxHip: 'https://wechat.nmyd168.com/Index/Project/index',
   }
 } else if (env === 'testing') {
   api = {
-    wxHip: 'http://wx.gsy8.com/hip-api',
+    wxHip: 'https://wechat.nmyd168.com/Index/Project/index',
   }
 } else { //生产环境
   api = {
-    wxHip: 'http://wx.gsy8.com/hip-api',
+    wxHip: 'https://wechat.nmyd168.com/Index/Project/index',
   }
 
 }

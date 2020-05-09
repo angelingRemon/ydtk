@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 /* vuex状态管理 */
-import store from './vuex/store'
+import store from './store'
 
 /* 路由 */
 import router from '@/router/router' // 引用路由配置文件
@@ -27,6 +27,8 @@ Vue.use(Vant);
 
 Vue.config.productionTip = false
 
+//公共样式
+import '@/assets/css/common.css' //公共样式表
 new Vue({
   router,
   store,  

@@ -1,0 +1,108 @@
+img{
+    max-width:100%;
+}
+/* flex布局 */
+.ren-flex,
+.ren-flex-sb,
+.ren-flex-sa,
+.ren-flex-ac,
+.ren-flex-ce {
+  display: flex;
+}
+
+.ren-flex-sb {
+  justify-content: space-between;
+}
+
+.ren-flex-sa {
+  justify-content: space-around;
+}
+
+.ren-flex-ce {
+  justify-content: center;
+}
+
+.ren-flex-ac {
+  align-items: center;
+}
+
+/*1像素 边框 开始*/
+.line_bottom {
+  background-color: #fff;
+  border: none;
+  background-image: -webkit-linear-gradient(bottom, transparent 50%, #edede5 50%);
+  background-image: linear-gradient(bottom, transparent 50%, #edede5 50%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.line_top {
+  border: none;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, transparent 50%, #edede5 50%);
+  background-image: linear-gradient(top, transparent 50%, #edede5 50%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.line_left {
+  border: none;
+  background-image: -webkit-linear-gradient(left, transparent 30%, #edede5 30%);
+  background-image: linear-gradient(left, transparent 30%, #edede5 30%);
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.line_right {
+  border: none;
+  background-image: -webkit-linear-gradient(right, transparent 50%, #edede5 50%);
+  background-image: linear-gradient(right, transparent 50%, #edede5 50%);
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.line_bottom_right {
+  border: none;
+  background-image: -webkit-linear-gradient(bottom, transparent 50%, #edede5 50%), -webkit-linear-gradient(right, transparent 50%, #cccccc 50%);
+  background-image: linear-gradient(bottom, transparent 50%, #edede5 50%), linear-gradient(right, transparent 50%, #cccccc 50%);
+  background-size: 100% 1px, 1px 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right top;
+}
+
+.line_right_fff {
+  border: none;
+  background-image: -webkit-linear-gradient(right, transparent 50%, #ffffff 50%);
+  background-image: linear-gradient(right, transparent 50%, #ffffff 50%);
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.line_bottom_fff {
+  border: none;
+  background-image: -webkit-linear-gradient(bottom, transparent 50%, #ffffff 50%);
+  background-image: linear-gradient(bottom, transparent 50%, #ffffff 50%);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+/*1像素 边框 结束*/
+/* 溢出影藏 开始 */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
